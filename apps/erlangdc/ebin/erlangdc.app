@@ -1,0 +1,11 @@
+{application,erlangdc,
+             [{description,"ErlangDC 2013 Example"},
+              {vsn,"0.1.0"},
+              {registered,[erlangdc_sup]},
+              {mod,{erlangdc_app,[]}},
+              {start_phases,[]},
+              {applications,[kernel,stdlib,sasl,lager,inets,ranch,cowboy,jsx,
+                             iso8601,epgsql_connpool,estatsd]},
+              {env,[]},
+              {modules,[erlangdc_app,erlangdc_handler,erlangdc_sup,
+                        erlangdc_user,http_uri_r15b]}]}.
